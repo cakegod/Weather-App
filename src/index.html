@@ -6,17 +6,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="normalize.css" />
-    <script defer src="index.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<script defer src="index.js"></script>	
 		<title>Weather App</title>
 	</head>
 	<body>
 		<div class="container">
-			<div class="wrapper">
-				<p class="location"></p>
-				<p class="temp"></p>
+			<p class="location">Paris, FR</p>
+			<div class="temp-container">
+				<p class="temp">20°C</p>
+				<p class="description">Clear</p>
+				<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather description" />
+			</div>
+			<div class="complementary">
+				<div class="humidity-container">
+					<p>Humidity</p>
+					<p class="humidity">65%</p>
+				</div>
+				<div class="wind-container">
+					<p>Wind</p>
+					<p class="wind">3.6 km/h</p>
+				</div>
 			</div>
 			<form action="">
-				<input type="text" />
+				<div class="input-container">
+					<span class="material-symbols-outlined">
+						search
+						</span>
+					<input type="text" />
+				</div>
 			</form>
 		</div>
 	</body>

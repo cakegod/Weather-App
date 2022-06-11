@@ -4,12 +4,15 @@ body,
 html,
 .container {
 	height: 100%;
-  font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito', sans-serif;
+	color: white;
 }
 
 body {
-	background-color: black;
-	background-image: url('clouds.jpg');
+	background-color: #060316;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 p {
@@ -17,21 +20,67 @@ p {
 }
 .container {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	flex-direction: column;
+	height: 80%;
 }
 
-.location,
+.location {
+	font-size: 32px;
+}
+
 .temp {
-	font-size: 40px;
-	font-weight: 800;
+	font-size: 96px;
+}
+
+.description {
+	font-size: 32px;
+}
+
+.input-container {
+	border: none;
+	border-radius: 30px;
+	height: 30px;
+	padding: 7px;
+	-webkit-appearance: none;
+	width: 270px;
+	background-color: rgb(238, 238, 238);
+	display: flex;
+	align-items: center;
 }
 
 input {
-  border: none;
-    border-radius: 11px;
-    height: 20px;
-    padding: 7px;
-    -webkit-appearance: none;
+	background-color: transparent;
+	border: 0;
+}
+
+input:focus-visible {
+	outline: none;
+}
+
+.material-symbols-outlined {
+	color: black;
+	padding-right: 5pxpx;
+}
+
+.complementary {
+	display: flex;
+}
+
+.complementary > * {
+	text-align: center;
+	font-size: 20px;
+	padding: 20px;
+}
+
+.wind,
+.humidity {
+	font-size: 26px;
+}
+
+.temp-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
